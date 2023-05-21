@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/homeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="20dp">
+
+        <TextView
+            android:id="@+id/galonname"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/sanchez"
+            android:text="WarunKuu"
+            android:textColor="@color/dendro"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toStartOf="@+id/gallonImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/amazonDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="4dp"
+            android:text="Hemat Uang!"
+            android:textColor="@color/dendro"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/gallonImage"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/galonname" />
+
+        <ImageView
+            android:id="@+id/gallonImage"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/warunk"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/galonname"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gallonImage">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/productCard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/homeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/homeImage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/sanchez"
+                        android:text="Product"
+                        android:textColor="@color/dendro"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/homeImage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/syop" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp"
+                android:id="@+id/eventCard">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/eventImage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/sanchez"
+                        android:text="Event"
+                        android:textColor="@color/dendro"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/eventImage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/event" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp"
+                android:id="@+id/locationCard">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/loctName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/loctImage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/sanchez"
+                        android:text="location"
+                        android:textColor="@color/dendro"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/loctImage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/map" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/aboutCard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/about"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/aboutImage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/sanchez"
+                        android:text="About"
+                        android:textColor="@color/dendro"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/aboutImage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/about" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp"
+                android:id="@+id/settingCard">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/settingImage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/sanchez"
+                        android:text="Setting"
+                        android:textColor="@color/dendro"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/settingImage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/nav_settings" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

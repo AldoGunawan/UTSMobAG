@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutAct">
+
+    <TextView
+        android:id="@+id/AboutName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/sanchez"
+        android:layout_marginTop="12dp"
+        android:text="ABOUT"
+        android:textColor="@color/dendro"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AboutName"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/sanchez"
+        android:text="this app is made to fulfill my midterm exam and i hope to improve this app"
+        android:textColor="@color/dendro"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="89dp" />
+
+</RelativeLayout>
